@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recent Zone Redirect</title>
+    <script>
+        // JavaScript để chuyển hướng người dùng
+        function redirectToArticle(urlSearch) {
+            const url = `https://recentzone.com/${urlSearch}`;
+            window.location.href = url;
+        }
+
+        // Ví dụ chuyển hướng tự động
+        // Thay đổi theo nhu cầu của bạn
+        window.onload = function() {
+            const urlSearch = window.location.pathname;
+            if (urlSearch) {
+                redirectToArticle(urlSearch);
+            } else {
+                window.location.href = 'https://recentzone.com/';
+            }
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>
